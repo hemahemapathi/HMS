@@ -1,0 +1,42 @@
+/* Mobile-only fixes for Doctor Profile */
+@media (max-width: 767.98px) {
+  .doctor-profile-mobile {
+    padding: 0.5rem !important;
+    margin-top: 0 !important;
+  }
+  
+  .doctor-profile-mobile .doctor-card {
+    margin-bottom: 1rem !important;
+  }
+  
+  .doctor-profile-mobile .card-body {
+    padding: 1rem !important;
+  }
+  
+  .doctor-profile-mobile h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  .doctor-profile-mobile .btn {
+    font-size: 0.875rem !important;
+    padding: 0.5rem 1rem !important;
+  }
+  
+  .doctor-profile-mobile .table {
+    font-size: 0.875rem !important;
+  }
+  
+  .doctor-profile-mobile .form-control {
+    font-size: 1rem !important;
+  }
+}
+
+/* Fix navbar spacing */
+.navbar {
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
+.page-container {
+  padding-top: 1rem !important;
+}

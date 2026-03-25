@@ -1,0 +1,23 @@
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-top: 0 !important;
+  position: relative;
+  top: 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem !important;
+}
+
+.nav-link:hover {
+  color: #dc3545 !important;
+}
+
+/* Ensure no spacing above navbar */
+body {
+  padding-top: 0 !important;
+}
+
+.container-fluid {
+  padding-top: 0 !important;
+}

@@ -1,0 +1,124 @@
+/* Auth Theme - White and Black */
+:root {
+  --auth-primary: #000000be;
+  --auth-secondary: #ffffff;
+  --auth-accent: #6c757d;
+  --auth-light: #f8f9fa;
+  --auth-dark: #212529;
+  --auth-border: #dee2e6;
+}
+
+.auth-container {
+  min-height: 100vh;
+  background: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.auth-card {
+  background: var(--auth-secondary);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--auth-border);
+  overflow: hidden;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.grid-card {
+  max-width: 900px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.grid-full {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.auth-header {
+  background: white !important;
+  color: #212529 !important;
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.auth-header h2 {
+  color: #212529 !important;
+  font-weight: 600;
+}
+
+.auth-card .form-control {
+  border: 2px solid var(--auth-border);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.auth-card .form-control:focus {
+  border-color: var(--auth-primary);
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.auth-card .form-floating > label {
+  color: var(--auth-accent);
+  font-weight: 500;
+}
+
+.auth-card .btn-custom {
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.auth-card .btn-danger {
+  background-color: var(--auth-primary);
+  border-color: var(--auth-primary);
+}
+
+.auth-card .btn-danger:hover {
+  background-color: var(--auth-dark);
+  border-color: var(--auth-dark);
+  transform: translateY(-2px);
+}
+
+.auth-card .btn-outline-danger {
+  color: var(--auth-primary);
+  border-color: var(--auth-primary);
+}
+
+.auth-card .btn-outline-danger:hover {
+  background-color: var(--auth-primary);
+  border-color: var(--auth-primary);
+  color: var(--auth-secondary);
+  transform: translateY(-2px);
+}
+
+.auth-card .form-select {
+  border: 2px solid var(--auth-border);
+  border-radius: 8px;
+}
+
+.auth-card .form-select:focus {
+  border-color: var(--auth-primary);
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.auth-card p {
+  color: var(--auth-accent);
+}
